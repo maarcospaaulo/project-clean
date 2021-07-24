@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+header .navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  background-color: #24252A;
+  min-height: 8vh;
+}
+
+header .navbar .logo {
+  margin-left: 15px;
+}
+
+header .navbar .logo h1 {
+  color: #edf0f1;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+header .navbar .logo h1:hover {
+  color: #0088a9;
+}
+
+header .navbar .nav__links {
+  display: flex;
+  justify-content: space-around;
+  width: 45%;
+}
+
+header .navbar .nav__links .nav__itens a {
+  color: #edf0f1;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease 0s;
+}
+
+header .navbar .nav__links .nav__itens a.active,a:hover {
+  color: #0088a9;
+}
+
+header .navbar .burguer {
+  display: none;
+  cursor: pointer;
+}
+
+header .navbar .burguer div{
+  width: 25px;
+  height: 3px;
+  background-color: #edf0f1;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+@media screen and (min-width: 1024px) {
+  header .navbar .nav__links {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  header .navbar .nav__links {
+    position: absolute;
+    background-color: #24252A;
+    right: 0px; 
+    height: 92vh;
+    top: 8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  header .navbar .nav__links .nav__itens {
+    opacity: 0;
+  }
+
+  header .navbar .burguer {
+    display: block;
+  }
+}
+
+header .navbar .nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .burguer__line1 {
+  transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .burguer__line2 {
+  opacity: 0;
+}
+
+.toggle .burguer__line3 {
+  transform: rotate(45deg) translate(-5px,-6px);
+}
