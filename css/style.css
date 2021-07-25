@@ -53,7 +53,7 @@ header .navbar .nav__links {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 45%;
+  width: 60%;
 }
 
 header .navbar .nav__links .nav__itens a {
@@ -65,7 +65,11 @@ header .navbar .nav__links .nav__itens a {
   transition: all 0.3s ease 0s;
 }
 
-header .navbar .nav__links .nav__itens a.active,a:hover {
+header .navbar .nav__links .nav__itens a:hover {
+  color: #0088a9;
+}
+
+header .navbar .nav__links .nav__itens a.active {
   color: #0088a9;
 }
 
@@ -79,9 +83,9 @@ header .navbar .burguer div{
   height: 3px;
   background-color: #edf0f1;
   margin: 5px;
-  -webkit-transition: all 0.s ease;
-  -o-transition: all 0.s ease;
-  transition: all 0.s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 @media screen and (min-width: 1024px) {
