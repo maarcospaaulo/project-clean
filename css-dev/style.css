@@ -80,14 +80,15 @@ header .navbar .burguer div{
     position: fixed;
     background-color: #24252A;
     right: 0px; 
-    height: 92vh;
-    top: 8vh;
+    height: 80vh;
+    top: 7vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 60%;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
+    z-index: 2;
   }
 
   header .navbar .nav__links .nav__itens {
@@ -125,3 +126,13 @@ header .navbar .nav-active {
 .toggle .burguer__line3 {
   transform: rotate(45deg) translate(-5px,-6px);
 }
+
+main .section-hero {
+  height: 600px;
+}
+
+main .section-hero .section-hero__img img {
+  height: 600px;
+  object-fit: cover;
+}
+

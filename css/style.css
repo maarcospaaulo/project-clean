@@ -102,8 +102,8 @@ header .navbar .burguer div{
     position: fixed;
     background-color: #24252A;
     right: 0px; 
-    height: 92vh;
-    top: 8vh;
+    height: 80vh;
+    top: 7vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -123,6 +123,7 @@ header .navbar .burguer div{
     -o-transition: transform 0.5s ease-in;
     transition: transform 0.5s ease-in;
     transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+    z-index: 2;
   }
 
   header .navbar .nav__links .nav__itens {
@@ -180,4 +181,14 @@ header .navbar .nav-active {
   -webkit-transform: rotate(45deg) translate(-5px,-6px);
       -ms-transform: rotate(45deg) translate(-5px,-6px);
           transform: rotate(45deg) translate(-5px,-6px);
+}
+
+main .section-hero {
+  height: 600px;
+}
+
+main .section-hero .section-hero__img img {
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
