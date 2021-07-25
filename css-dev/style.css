@@ -73,7 +73,7 @@ header .navbar .burguer div{
     overflow-x: hidden;
   }
   header .navbar .nav__links {
-    position: absolute;
+    position: fixed;
     background-color: #24252A;
     right: 0px; 
     height: 92vh;

@@ -79,9 +79,9 @@ header .navbar .burguer div{
   height: 3px;
   background-color: #edf0f1;
   margin: 5px;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.s ease;
+  -o-transition: all 0.s ease;
+  transition: all 0.s ease;
 }
 
 @media screen and (min-width: 1024px) {
@@ -95,7 +95,7 @@ header .navbar .burguer div{
     overflow-x: hidden;
   }
   header .navbar .nav__links {
-    position: absolute;
+    position: fixed;
     background-color: #24252A;
     right: 0px; 
     height: 92vh;
