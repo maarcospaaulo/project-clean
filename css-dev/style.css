@@ -59,7 +59,7 @@ header .navbar .burguer div{
   height: 3px;
   background-color: #edf0f1;
   margin: 5px;
-  transition: all 0.3s ease;
+  transition: all 0.s ease;
 }
 
 @media screen and (min-width: 1024px) {

@@ -79,6 +79,9 @@ header .navbar .burguer div{
   height: 3px;
   background-color: #edf0f1;
   margin: 5px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 @media screen and (min-width: 1024px) {
@@ -107,7 +110,7 @@ header .navbar .burguer div{
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 50%;
+    width: 60%;
     -webkit-transform: translateX(100%);
         -ms-transform: translateX(100%);
             transform: translateX(100%);
@@ -157,4 +160,20 @@ header .navbar .nav-active {
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
   }
+}
+
+.toggle .burguer__line1 {
+  -webkit-transform: rotate(-45deg) translate(-5px,6px);
+      -ms-transform: rotate(-45deg) translate(-5px,6px);
+          transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .burguer__line2 {
+  opacity: 0;
+}
+
+.toggle .burguer__line3 {
+  -webkit-transform: rotate(45deg) translate(-5px,-6px);
+      -ms-transform: rotate(45deg) translate(-5px,-6px);
+          transform: rotate(45deg) translate(-5px,-6px);
 }
