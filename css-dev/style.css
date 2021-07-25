@@ -80,8 +80,8 @@ header .navbar .burguer div{
     position: fixed;
     background-color: #24252A;
     right: 0px; 
-    height: 80vh;
-    top: 7vh;
+    height: 85vh;
+    top: 70px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -128,11 +128,11 @@ header .navbar .nav-active {
 }
 
 main .section-hero {
-  height: 600px;
+  height: 90vh;
 }
 
 main .section-hero .section-hero__img img {
-  height: 600px;
+  height: 90vh;
   object-fit: cover;
 }
 
