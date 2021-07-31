@@ -10,7 +10,8 @@
     {
       "src": "img/logo.png",
       "type": "image/png",
-      "sizes": "577x577"
+      "sizes": "577x577",
+      "purpose": "any maskable"
     }
   ]
 }
