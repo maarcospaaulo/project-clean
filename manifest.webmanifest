@@ -3,10 +3,8 @@
   "name": "Project Clean",
   "start_url": ".",
   "display": "standalone",
-  "theme-color": "#ffffff",
-  "theme-color": "#ffffff",
-  "background-color": "#000000",
-  "background-color": "#000000",
+  "theme_color": "#ffffff",
+  "background_color": "#000000",
   "description": "Site Project Clean",
   "icons" : [
     {
