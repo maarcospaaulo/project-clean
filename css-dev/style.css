@@ -151,7 +151,7 @@ main {
 }
 
 main .section-hero {
-  
+  min-height: 345px;
 }
 
 main .section-hero .section-hero__itens img {
@@ -173,11 +173,11 @@ main .section-hero .section-hero__itens div p {
 }
 
 main .section-about {
-  height: 350px;
+  min-height: 350px;
 }
 
 main .section-about .container {
-  margin: 0 20px;
+  padding: 0 20px;
 }
 
 main .section-about .container h2 {
