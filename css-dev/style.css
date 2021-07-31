@@ -155,9 +155,9 @@ main .section-hero {
 }
 
 main .section-hero .section-hero__itens img {
-  height: 70vh;
+  height: 50vh;
   object-fit: cover;
-  filter: brightness(70%);
+  filter: brightness(80%);
 }
 
 main .section-hero .section-hero__itens div p {
@@ -166,7 +166,7 @@ main .section-hero .section-hero__itens div p {
   color: #ffffff;
   text-align: center;
   width: 100%;
-  margin-top: 30vh;
+  margin-top: 20vh;
   font-size: 3.5rem;
   font-weight: bold;
   opacity: 0.4;
