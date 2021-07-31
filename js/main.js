@@ -1,3 +1,17 @@
+window.addEventListener('load', ()=>{
+  registerSW()
+})
+
+async function registerSW(){
+  if('serviceWorker' in navigator){
+      try{
+          await navigator.serviceWorker.register("./sw.js")
+      } catch(e){
+          console.log(`SW registration failed`);
+      }
+  }
+}
+
 const navSlide = () => {
   const burguer = document.querySelector(".burguer");
   const menu = document.querySelector(".menu");
@@ -31,19 +45,3 @@ $('.slider').slick({
   autoplay: true,
   autoplaySpeed: 4000,
 });
-
-
-window.addEventListener('load', () => {
-  registerSW();
-});
-
-async function registerSW() {
-  if('serviceWorker' in navigator) {
-    try {
-      await navigator.serviceWorker.register('./sw.js');
-    } catch (e) {
-      console.log('SW registration failed');
-    }
-  }
-}
-

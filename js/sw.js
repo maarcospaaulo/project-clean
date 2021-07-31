@@ -4,10 +4,10 @@ self.addEventListener('install', function(event){
   event.waitUntil(
     caches.open(cacheName).then(function(cache) {
       cache.addAll([
-        '../',
-        '../index.html',
-        '../manifest.webmanifest',
-        './main.min.js'
+        './',
+        './index.html',
+        './manifest.webmanifest',
+        './js/main.min.js'
       ])
     })
   )
