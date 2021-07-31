@@ -1,7 +1,7 @@
 /*
 * Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
 * Browsers: last 4 version
 */
 
@@ -14,138 +14,131 @@
   text-decoration: none;
 }
 
-header .navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 80px;
-  background-color: #24252A;
-  min-height: 8vh;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
-header .navbar .logo {
-  margin-left: 15px;
+@font-face {
+  font-family: "Quicksand";
+  font-display: swap;
+  src: url(../fonts/Quicksand-Regular.ttf);
 }
 
-header .navbar .logo h1 {
-  color: #edf0f1;
-  cursor: pointer;
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+header {
+  background-color: #eeeeee;
+  width: 100%;
+  height: 10vh;
+  position: fixed;
+  z-index: 1;
+}
+
+header .logo {
+  display: block;
+}
+
+header .logo h1 {
+  font-family: "Montserrat";
+  font-weight: 100;
+  letter-spacing: 0px;
   font-size: 20px;
   text-transform: uppercase;
-  letter-spacing: 5px;
+  line-height: 10vh;
+  float: right;
+  padding-right: 20px;
+  color: #4285f4;
 }
 
-header .navbar .logo h1:hover {
-  color: #0088a9;
+header .burguer {
+  margin: 20px;
+  display: inline-block;
 }
 
-header .navbar .nav__links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 60%;
-}
-
-header .navbar .nav__links .nav__itens a {
-  color: #edf0f1;
-  font-size: 14px;
-  font-weight: 500;
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-header .navbar .nav__links .nav__itens a:hover {
-  color: #0088a9;
-}
-
-header .navbar .nav__links .nav__itens a.active {
-  color: #0088a9;
-}
-
-header .navbar .burguer {
-  display: none;
-  cursor: pointer;
-}
-
-header .navbar .burguer div{
+header .burguer div{
   width: 25px;
-  height: 3px;
-  background-color: #edf0f1;
+  height: 2px;
+  background-color: #4285f4;
   margin: 5px;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-@media screen and (min-width: 1024px) {
-  header .navbar .nav__links {
-    width: 60%;
-  }
+header .menu {
+  margin-left: -100%;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
-@media screen and (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
-  header .navbar .nav__links {
-    position: fixed;
-    background-color: #24252A;
-    right: 0px; 
-    height: 80vh;
-    top: 7vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 60%;
-    -webkit-transform: translateX(100%);
-        -ms-transform: translateX(100%);
-            transform: translateX(100%);
-    -webkit-transition: -webkit-transform 0.5s ease-in;
-    transition: -webkit-transform 0.5s ease-in;
-    -o-transition: transform 0.5s ease-in;
-    transition: transform 0.5s ease-in;
-    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
-    z-index: 2;
-  }
-
-  header .navbar .nav__links .nav__itens {
-    opacity: 0;
-  }
-
-  header .navbar .burguer {
-    display: block;
-  }
+header .menu-active {
+  margin-left: 0;
 }
 
-header .navbar .nav-active {
-  -webkit-transform: translateX(0%);
-      -ms-transform: translateX(0%);
-          transform: translateX(0%);
+header .menu .navbar {
+  display: block;
+  position: absolute;
+  top: 8vh;
+  background-color: #eeeeee;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+}
+
+header .menu .navbar ul {
+  position: relative;
+}
+
+header .menu .navbar ul li {
+  margin: 5px 0;
+  width: 100%;
+  opacity: 0;
+}
+
+header .menu .navbar ul li a {
+  display: block;
+  font-family: "Montserrat";
+  color: #4285f4;
+  padding: 10px 0;
+}
+
+header .menu .navbar ul ul {
+  background-color: #c5dbff;
+  position: static;
+  overflow: hidden;
+  visibility: hidden;
+  max-height: 0;
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+header .menu .navbar ul ul li {
+  opacity: 1;
+}
+
+header .menu .navbar ul ul li a {
+  font-weight: bold;
+}
+
+header .menu .navbar ul li:hover ul {
+  height: auto;
+  max-height: 375px;
+  visibility: visible;
+  margin-top: 10px;
 }
 
 @-webkit-keyframes navLinkFade {
   from {
     opacity: 0;
-    -webkit-transform: translateX(50px);
-            transform: translateX(50px);
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
   }
   to {
     opacity: 1;
@@ -157,8 +150,8 @@ header .navbar .nav-active {
 @keyframes navLinkFade {
   from {
     opacity: 0;
-    -webkit-transform: translateX(50px);
-            transform: translateX(50px);
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
   }
   to {
     opacity: 1;
@@ -168,9 +161,9 @@ header .navbar .nav-active {
 }
 
 .toggle .burguer__line1 {
-  -webkit-transform: rotate(-45deg) translate(-5px,6px);
-      -ms-transform: rotate(-45deg) translate(-5px,6px);
-          transform: rotate(-45deg) translate(-5px,6px);
+  -webkit-transform: rotate(-45deg) translate(-4px,6px);
+      -ms-transform: rotate(-45deg) translate(-4px,6px);
+          transform: rotate(-45deg) translate(-4px,6px);
 }
 
 .toggle .burguer__line2 {
@@ -178,17 +171,17 @@ header .navbar .nav-active {
 }
 
 .toggle .burguer__line3 {
-  -webkit-transform: rotate(45deg) translate(-5px,-6px);
-      -ms-transform: rotate(45deg) translate(-5px,-6px);
-          transform: rotate(45deg) translate(-5px,-6px);
+  -webkit-transform: rotate(45deg) translate(-4px,-6px);
+      -ms-transform: rotate(45deg) translate(-4px,-6px);
+          transform: rotate(45deg) translate(-4px,-6px);
 }
 
 main .section-hero {
-  height: 600px;
+  height: 70vh;
 }
 
 main .section-hero .section-hero__img img {
-  height: 600px;
+  height: 70vh;
   -o-object-fit: cover;
      object-fit: cover;
 }
