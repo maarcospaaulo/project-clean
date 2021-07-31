@@ -97,7 +97,6 @@ header .menu .navbar ul li {
 header .menu .navbar ul li a {
   display: block;
   font-family: "Montserrat";
-  color: #4285f4;
   padding: 10px 0;
 }
 
@@ -155,9 +154,22 @@ main .section-hero {
   
 }
 
-main .section-hero .section-hero__img img {
+main .section-hero .section-hero__itens img {
   height: 70vh;
   object-fit: cover;
+  filter: brightness(70%);
+}
+
+main .section-hero .section-hero__itens div p {
+  position: absolute;
+  top: 0;
+  color: #ffffff;
+  text-align: center;
+  width: 100%;
+  margin-top: 30vh;
+  font-size: 3.5rem;
+  font-weight: bold;
+  opacity: 0.4;
 }
 
 main .section-about .container {
