@@ -172,6 +172,10 @@ main .section-hero .section-hero__itens div p {
   opacity: 0.4;
 }
 
+main .section-about {
+  height: 350px;
+}
+
 main .section-about .container {
   margin: 0 20px;
 }
