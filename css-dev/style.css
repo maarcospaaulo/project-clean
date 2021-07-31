@@ -150,10 +150,6 @@ main {
   height: 100%;
 }
 
-main .section-hero {
-  min-height: 345px;
-}
-
 main .section-hero .section-hero__itens img {
   height: 50vh;
   object-fit: cover;
@@ -170,10 +166,6 @@ main .section-hero .section-hero__itens div p {
   font-size: 3.5rem;
   font-weight: bold;
   opacity: 0.4;
-}
-
-main .section-about {
-  min-height: 350px;
 }
 
 main .section-about .container {
