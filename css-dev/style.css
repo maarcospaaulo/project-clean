@@ -7,8 +7,7 @@
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+  aspect-ratio: attr(width) / attr(height);
 }
 
 @font-face {
@@ -148,6 +147,10 @@ header .menu .navbar ul li:hover ul {
 
 main {
   height: 100%;
+}
+
+main .section-hero {
+  min-height: 320px;
 }
 
 main .section-hero .section-hero__itens img {
