@@ -8,11 +8,13 @@
 
 @font-face {
   font-family: "Quicksand";
+  font-display: swap;
   src: url(../fonts/Quicksand-Regular.ttf);
 }
 
 @font-face {
   font-family: "Montserrat";
+  font-display: swap;
   src: url(../fonts/Montserrat-Regular.ttf);
 }
 
@@ -90,7 +92,7 @@ header .menu .navbar ul li a {
 }
 
 header .menu .navbar ul ul {
-  background-color: #c4c4c4;
+  background-color: #c5dbff;
   position: static;
   overflow: hidden;
   visibility: hidden;
@@ -100,6 +102,10 @@ header .menu .navbar ul ul {
 
 header .menu .navbar ul ul li {
   opacity: 1;
+}
+
+header .menu .navbar ul ul li a {
+  font-weight: bold;
 }
 
 header .menu .navbar ul li:hover ul {
