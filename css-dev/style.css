@@ -6,108 +6,112 @@
   text-decoration: none;
 }
 
-header .navbar {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 80px;
-  background-color: #24252A;
-  min-height: 8vh;
+@font-face {
+  font-family: "Quicksand";
+  src: url(../fonts/Quicksand-Regular.ttf);
 }
 
-header .navbar .logo {
-  margin-left: 15px;
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Regular.ttf);
 }
 
-header .navbar .logo h1 {
-  color: #edf0f1;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
+header {
+  background-color: #eeeeee;
+  width: 100%;
+  height: 8vh;
+  position: relative;
+}
+
+header .logo {
+  display: block;
+}
+
+header .logo h1 {
+  font-family: "Montserrat";
+  font-weight: 100;
+  letter-spacing: 0px;
   font-size: 20px;
   text-transform: uppercase;
-  letter-spacing: 5px;
+  line-height: 8vh;
+  float: right;
+  padding-right: 20px;
+  color: #4285f4;
 }
 
-header .navbar .logo h1:hover {
-  color: #0088a9;
+header .burguer {
+  margin: 20px;
+  display: inline-block;
 }
 
-header .navbar .nav__links {
-  display: flex;
-  justify-content: space-around;
-  width: 60%;
-}
-
-header .navbar .nav__links .nav__itens a {
-  color: #edf0f1;
-  font-size: 14px;
-  font-weight: 500;
-  transition: all 0.3s ease 0s;
-}
-
-header .navbar .nav__links .nav__itens a:hover {
-  color: #0088a9;
-}
-
-header .navbar .nav__links .nav__itens a.active {
-  color: #0088a9;
-}
-
-header .navbar .burguer {
-  display: none;
-  cursor: pointer;
-}
-
-header .navbar .burguer div{
+header .burguer div{
   width: 25px;
-  height: 3px;
-  background-color: #edf0f1;
+  height: 2px;
+  background-color: #4285f4;
   margin: 5px;
   transition: all 0.3s ease;
 }
 
-@media screen and (min-width: 1024px) {
-  header .navbar .nav__links {
-    width: 60%;
-  }
+header .menu {
+  margin-left: -100%;
+  transition: all 0.5s;
 }
 
-@media screen and (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
-  header .navbar .nav__links {
-    position: fixed;
-    background-color: #24252A;
-    right: 0px; 
-    height: 85vh;
-    top: 70px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 60%;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in;
-    z-index: 2;
-  }
-
-  header .navbar .nav__links .nav__itens {
-    opacity: 0;
-  }
-
-  header .navbar .burguer {
-    display: block;
-  }
+header .menu-active {
+  margin-left: 0;
 }
 
-header .navbar .nav-active {
-  transform: translateX(0%);
+header .menu .navbar {
+  display: block;
+  position: absolute;
+  top: 8vh;
+  background-color: #eeeeee;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+}
+
+header .menu .navbar ul {
+  position: relative;
+}
+
+header .menu .navbar ul li {
+  margin: 5px 0;
+  width: 100%;
+  opacity: 0;
+}
+
+header .menu .navbar ul li a {
+  display: block;
+  font-family: "Montserrat";
+  color: #4285f4;
+  padding: 10px 0;
+}
+
+header .menu .navbar ul ul {
+  background-color: #c4c4c4;
+  position: static;
+  overflow: hidden;
+  visibility: hidden;
+  max-height: 0;
+  transition: all 0.8s;
+}
+
+header .menu .navbar ul ul li {
+  opacity: 1;
+}
+
+header .menu .navbar ul li:hover ul {
+  height: auto;
+  max-height: 375px;
+  visibility: visible;
+  margin-top: 10px;
 }
 
 @keyframes navLinkFade {
   from {
     opacity: 0;
-    transform: translateX(50px);
+    transform: translateX(-50px);
   }
   to {
     opacity: 1;
@@ -116,7 +120,7 @@ header .navbar .nav-active {
 }
 
 .toggle .burguer__line1 {
-  transform: rotate(-45deg) translate(-5px,6px);
+  transform: rotate(-45deg) translate(-4px,6px);
 }
 
 .toggle .burguer__line2 {
@@ -124,7 +128,7 @@ header .navbar .nav-active {
 }
 
 .toggle .burguer__line3 {
-  transform: rotate(45deg) translate(-5px,-6px);
+  transform: rotate(45deg) translate(-4px,-6px);
 }
 
 main .section-hero {
@@ -132,7 +136,6 @@ main .section-hero {
 }
 
 main .section-hero .section-hero__img img {
-  height: 90vh;
+  height: 70vh;
   object-fit: cover;
 }
-

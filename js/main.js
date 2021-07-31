@@ -1,11 +1,11 @@
 const navSlide = () => {
   const burguer = document.querySelector(".burguer");
-  const nav = document.querySelector(".nav__links");
-  const navItens = document.querySelectorAll(".nav__itens");
+  const menu = document.querySelector(".menu");
+  const navItens = document.querySelectorAll(".navbar>ul>li");
 
   burguer.addEventListener('click', () => {
 
-    nav.classList.toggle('nav-active');
+    menu.classList.toggle('menu-active');
 
     navItens.forEach((item, index) => {
       if (item.style.animation) {
