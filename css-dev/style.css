@@ -38,7 +38,9 @@ header {
 }
 
 header .logo {
-  display: block;
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 100px;
 }
 
 header .logo h1 {
@@ -47,14 +49,13 @@ header .logo h1 {
   font-size: 1.4rem;
   text-transform: uppercase;
   line-height: 64px;
-  float: right;
-  padding-right: 20px;
   color: #4285f4;
 }
 
 header .burguer {
   margin: 20px;
   display: inline-block;
+  position: absolute;
 }
 
 header .burguer div{
@@ -174,7 +175,7 @@ main .section-hero .section-hero__itens div p {
 
 main .section-about .container {
   height: 350px;
-  width: auto;
+  width: 100%;
   overflow: hidden;
   padding: 0 20px;
 }
