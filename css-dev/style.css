@@ -7,7 +7,8 @@
 }
 
 img {
-  aspect-ratio: attr(width) / attr(height);
+  width: 100%;
+  height: auto;
 }
 
 @font-face {
@@ -172,6 +173,9 @@ main .section-hero .section-hero__itens div p {
 }
 
 main .section-about .container {
+  height: 350px;
+  width: auto;
+  overflow: hidden;
   padding: 0 20px;
 }
 
