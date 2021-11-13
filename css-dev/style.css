@@ -152,7 +152,7 @@ main {
 }
 
 main .section-hero {
-  min-height: 320px;
+  max-height: 320px;
 }
 
 main .section-hero .section-hero__itens img {
