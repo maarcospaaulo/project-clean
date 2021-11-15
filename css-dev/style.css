@@ -229,6 +229,13 @@ main .section-services .services .services-item {
 
 
 main .section-services .services .services-item h3 {
-  font-weight: 100;
+  font-weight: bold;
   font-size: 1.2rem;
+  padding-top: 10px;
+}
+
+main .section-services .services .services-item img {
+  height: 150px;
+  width: 100%;
+  padding: 0 10px;
 }
