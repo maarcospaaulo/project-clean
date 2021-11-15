@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 header {
-  background-color: #eeeeee;
+  background-color: #4285f4;
   width: 100%;
   height: 64px;
   position: sticky;
@@ -40,7 +40,6 @@ header {
 header .logo {
   display: inline-block;
   padding-left: 20px;
-  padding-right: 100px;
 }
 
 header .logo h1 {
@@ -49,19 +48,20 @@ header .logo h1 {
   font-size: 1.4rem;
   text-transform: uppercase;
   line-height: 64px;
-  color: #4285f4;
+  color: #eeeeee;
 }
 
 header .burguer {
   margin: 20px;
   display: inline-block;
   position: absolute;
+  right: 0;
 }
 
 header .burguer div{
   width: 25px;
   height: 2px;
-  background-color: #4285f4;
+  background-color: #eeeeee;
   margin: 5px;
   transition: all 0.6s ease;
 }
@@ -99,6 +99,7 @@ header .menu .navbar ul li a {
   display: block;
   font-family: "Montserrat";
   padding: 10px 0;
+  color: #4285f4;
 }
 
 header .menu .navbar ul ul {
@@ -161,8 +162,17 @@ main .title-section {
   font-weight: 100;
   color: #4285f4;
   text-transform: uppercase;
-  text-align: center;
   padding: 20px 0px;
+}
+
+main .title-section::after {
+  content: "";
+  width: 150px;
+  height: 3px;
+  background-color: #4285f4;
+  background-image: linear-gradient(to right, #4285f4 , #ffffff);
+  display: block;
+  margin-top: 8px;
 }
 
 main .section-hero {
@@ -188,8 +198,9 @@ main .section-hero .section-hero__itens div p {
 }
 
 main .section-about {
-  height: 330px;
+  height: 390px;
   overflow: hidden;
+  margin-bottom: 15px;
 }
 
 main .section-about .container p {
