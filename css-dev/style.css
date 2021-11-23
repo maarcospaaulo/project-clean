@@ -182,19 +182,35 @@ main .section-hero {
 main .section-hero .section-hero__itens img {
   height: 320px;
   object-fit: cover;
-  filter: brightness(80%);
+  filter: brightness(60%);
 }
 
-main .section-hero .section-hero__itens div p {
+main .section-hero .section-hero__text {
   position: absolute;
-  top: 0;
-  color: #ffffff;
-  text-align: center;
   width: 100%;
-  padding-top: 120px;
-  font-size: 3.5rem;
+  top: 140px;
+  text-align: center;
+}
+
+main .section-hero .section-hero__text h2 {
+  display: block;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 100;
+  margin-bottom: 60px;
+}
+
+main .section-hero .section-hero__text a {
+  display: block;
+  color: #ffffff;
   font-weight: bold;
-  opacity: 0.4;
+  font-size: 1rem;
+  padding: 10px;
+  border: 1px solid #4285f4;
+  border-radius: 5px;
+  margin: 0 80px;
+  background-color: #4285f4;
+
 }
 
 main .section-about {
