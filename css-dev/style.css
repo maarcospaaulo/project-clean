@@ -173,11 +173,11 @@ main .title-section {
 } */
 
 main .section-hero {
-  max-height: 320px;
+  max-height: 550px;
 }
 
 main .section-hero .section-hero__itens img {
-  height: 320px;
+  height: 550px;
   object-fit: cover;
   filter: brightness(50%);
 }
@@ -212,6 +212,7 @@ main .section-hero .section-hero__text a {
 main .section-about {
   height: 450px;
   overflow: hidden;
+  background-color: #fbfbfb;
 }
 
 main .section-about .container p {
