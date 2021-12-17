@@ -29,12 +29,17 @@ header {
   position: sticky;
   z-index: 1;
   top: 0;
-  box-shadow: 0 0px 12px #cccccc;
 }
 
 header .logo {
   display: inline-block;
   padding-left: 20px;
+}
+
+header .logo img {
+  width: 150px;
+  height: auto;
+  padding-top: 5px;
 }
 
 header .logo h1 {
