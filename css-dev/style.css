@@ -48,7 +48,7 @@ header .logo h1 {
   font-size: 1.4rem;
   text-transform: uppercase;
   line-height: 80px;
-  color: #4285f4;
+  color: #0891c9;
 }
 
 header .burguer {
@@ -61,7 +61,7 @@ header .burguer {
 header .burguer div{
   width: 25px;
   height: 2px;
-  background-color: #4285f4;
+  background-color: #0891c9;
   margin: 5px;
   transition: all 0.6s ease;
 }
@@ -100,7 +100,7 @@ header .menu .navbar ul li a {
   display: block;
   font-family: "Open Sans";
   padding: 10px 0;
-  color: #4285f4;
+  color: #0891c9;
 }
 
 /* header .menu .navbar ul ul {
@@ -171,8 +171,8 @@ main .title-section {
   content: "";
   width: 150px;
   height: 3px;
-  background-color: #4285f4;
-  background-image: linear-gradient(to right, #4285f4 , #ffffff);
+  background-color: #0891c9;
+  background-image: linear-gradient(to right, #0891c9 , #ffffff);
   display: block;
   margin-top: 8px;
 } */
@@ -211,7 +211,7 @@ main .section-hero .section-hero__text a {
   font-weight: bold;
   font-size: 1rem;
   padding: 10px;
-  border: 2px solid #4285f4;
+  border: 2px solid #0891c9;
   border-radius: 40px;
   margin: 0 80px;
 }
