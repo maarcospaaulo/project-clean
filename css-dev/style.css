@@ -225,6 +225,10 @@ main .section-services .services {
   margin-left: 25px;
 }
 
+main .section-services .services-description {
+  text-align: justify;
+}
+
 main .section-services .services .services-item {
   text-align: center;
   padding: 20px 0;
@@ -315,4 +319,10 @@ footer ul li > h4 {
 
 footer .footer-contact .footer-contact-item p {
   color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  main .section-services .services {
+    flex-direction: row;
+  }
 }
