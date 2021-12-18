@@ -276,6 +276,7 @@ main .section-contact .contact-btn p {
   padding-right: 10px;
   color: #ffffff;
   font-weight: 800;
+  text-transform: uppercase;
 }
 
 main .section-about {
