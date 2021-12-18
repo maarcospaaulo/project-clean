@@ -303,22 +303,46 @@ footer {
 footer h2 {
   color: #ffffff;
   padding-top: 40px;
+  font-size: 1.3rem;
 }
 
 footer h3 {
   color: #ffffff;
   padding-top: 20px;
   padding-bottom: 20px;
+  font-size: 1.1rem;
 }
 
 footer ul li > h4 {
   color: #ffffff;
   font-weight: 100;
   padding-top: 4px;
+  font-size: 1rem;
+}
+
+footer .social svg {
+  fill: #ffffff;
+  height: 30px;
+  width: 30px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+footer .footer-contact .footer-contact-item {
+  display: flex;
+  align-items: center;
+}
+
+footer .footer-contact .footer-contact-item svg {
+  fill: #ffffff;
+  height: 24px;
+  width: 24px;
+  margin-right: 15px;
 }
 
 footer .footer-contact .footer-contact-item p {
   color: #ffffff;
+  font-size: 1rem;
 }
 
 @media (min-width: 768px) {
