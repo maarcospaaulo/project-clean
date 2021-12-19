@@ -5,13 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ProjectClean | Limpeza Industrial</title>
+  <title>ProjectClean | Limpeza e Pintura Industrial</title>
   <meta name="description"
     content="Precisando de serviços de Limpeza Industrial? Somos especializados em limpeza de silos de matéria prima, galpões e fábricas em geral. Solicite um orçamento!">
-  <link rel="stylesheet" href="css-dev/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="slick/slick.css">
   <link rel="stylesheet" href="slick/slick-theme.css">
-  <link rel="canonical" href="https://maarcospaaulo.github.io/project-clean/">
+  <link rel="canonical" href="https://www.projectclean.com.br/">
   <link rel="manifest" href="manifest.webmanifest">
   <meta name="theme-color" content="#ffffff" />
   <link rel="apple-touch-icon" href="img/logo.png">
