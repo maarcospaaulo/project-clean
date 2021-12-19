@@ -300,6 +300,12 @@ footer {
   color: #ffffff;
 }
 
+footer .container > p {
+  color: #ffffff;
+  padding-bottom: 40px;
+  font-size: 0.8rem;
+}
+
 footer .footer-itens .footer-contact h2 {
   color: #ffffff;
   padding-top: 40px;
@@ -397,7 +403,25 @@ footer .footer-contact .footer-contact-item p {
   header .menu .navbar ul li:hover:after {
     width: 100%;
   }
+
+  header .menu .navbar ul li:hover a {
+    font-weight: bold;
+  }
   /* Seção hero */
+
+  main .section-hero {
+    max-height: 650px;
+  }
+  
+  main .section-hero .section-hero__itens img {
+    height: 650px;
+    object-fit: fill;
+    filter: brightness(50%);
+  }
+
+  main .section-hero .section-hero__text {
+    top: 360px;
+  }
 
   /* Seção Services */
   .container {
@@ -437,10 +461,6 @@ footer .footer-contact .footer-contact-item p {
   }
 
   /* Footer */
-
-  footer {
-    height: 420px;
-  }
 
   footer p {
     color: #ffffff;
