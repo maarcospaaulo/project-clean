@@ -220,6 +220,7 @@ main .section-services .services {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   margin-top: 30px;
   margin-right: 25px;
   margin-left: 25px;
@@ -233,7 +234,6 @@ main .section-services .services .services-item {
   text-align: center;
   padding: 20px 0;
   border: 1px solid #ffffff;
-  width: 100%;
   border-radius: 20px;
   box-shadow: 0 0 6px #cccccc;
   margin-bottom: 35px;
@@ -300,7 +300,7 @@ footer {
   color: #ffffff;
 }
 
-footer h2 {
+footer .footer-itens .footer-contact h2 {
   color: #ffffff;
   padding-top: 40px;
   font-size: 1.3rem;
@@ -347,7 +347,112 @@ footer .footer-contact .footer-contact-item p {
 }
 
 @media (min-width: 768px) {
+  /* Seção header */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  header .burguer {
+    display: none;
+  }
+
+  header .menu {
+    margin: 0;
+    display: inline-block;
+  }
+
+  header .menu .navbar {
+    display: inline-block;
+    top: 0;
+    width: auto;
+    background-color: transparent;
+    box-shadow: none;
+    z-index: 0;
+    position: relative;
+  }
+
+  header .menu .navbar ul {
+    display: flex;
+  }
+
+  header .menu .navbar ul li {
+    opacity: 1;
+    margin: 0;
+    width: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 10px;
+  }
+
+  header .menu .navbar ul li:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #0891c9;
+    transition: width .6s;
+  }
+
+  header .menu .navbar ul li:hover:after {
+    width: 100%;
+  }
+  /* Seção hero */
+
+  /* Seção Services */
+  .container {
+    padding: 0 10%;
+  }
+
   main .section-services .services {
     flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  main .section-services .services-description {
+    text-align: center;
+  }
+
+  main .section-services .services .services-item {
+    height: 380px;
+    width: 360px;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+  }
+
+  main .section-contact .contact-btn {
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  /* Seção About us */
+  main .section-about {
+    height: 350px;
+  }
+
+  main .section-about .container p {
+    text-align: center;
+  }
+
+  /* Footer */
+
+  footer {
+    height: 420px;
+  }
+
+  footer p {
+    color: #ffffff;
+  }
+
+  footer .footer-itens {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+
+  footer .footer-itens .footer-contact h2 {
+    padding-top: 20px;
   }
 }
