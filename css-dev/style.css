@@ -237,6 +237,7 @@ main .section-services .services .services-item {
   border-radius: 20px;
   box-shadow: 0 0 6px #cccccc;
   margin-bottom: 35px;
+  width: 280px;
 }
 
 
@@ -439,7 +440,7 @@ footer .footer-contact .footer-contact-item p {
 
   main .section-services .services .services-item {
     height: 380px;
-    width: 360px;
+    width: 320px;
     margin-top: 30px;
     margin-left: 20px;
     margin-right: 20px;

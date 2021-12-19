@@ -45,7 +45,7 @@
             <a href="#services">Nossos Serviços</a>
           </li>
           <li>
-            <a href="#gallery">Galeria de Fotos</a>
+            <a href="https://www.instagram.com/projectclean.com.br/" target="_blank">Galeria de Fotos</a>
           </li>
           <li>
             <a href="#contact">Contato</a>
@@ -216,7 +216,7 @@
         </div>
       </div>
     </section>
-    <section class="section-contact">
+    <section class="section-contact" id="contact">
       <div class="container">
         <h2 class="title-section">Faça seu <strong>Orçamento</strong> sem compromisso</h2>
         <a class="contact-btn" href="https://api.whatsapp.com/send?phone=5519992204001">
