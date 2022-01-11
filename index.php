@@ -328,7 +328,7 @@
           </div>
         </div>
       </div>
-      <p>© 2021 ProjectClean - CNPJ: 42.726.740/0001-50</p>
+      <p>© 2022 ProjectClean - CNPJ: 42.726.740/0001-50</p>
     </div>
   </footer>
 
