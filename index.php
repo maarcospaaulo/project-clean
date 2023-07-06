@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ProjectClean | Limpeza e Pintura Industrial</title>
   <meta name="description"
-    content="Precisando de serviços de Limpeza Industrial? Somos especializados em limpeza de silos de matéria prima, galpões e fábricas em geral. Solicite um orçamento!">
+    content="Procurando por serviços especializados em limpeza e pintura industrial? A ProjectClean é a solução perfeita para você. Realizamos limpeza de silos, galpões e fábricas, garantindo um ambiente limpo e seguro. Entre em contato conosco e solicite um orçamento personalizado.">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" href="slick/slick.css">
   <link rel="stylesheet" href="slick/slick-theme.css">
@@ -256,7 +256,7 @@
                   d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.5 17.311l-1.76-3.397-1.032.505c-1.12.543-3.4-3.91-2.305-4.497l1.042-.513-1.747-3.409-1.053.52c-3.601 1.877 2.117 12.991 5.8 11.308l1.055-.517z" />
               </svg>
             </span>
-            <p>(19) 99220-4001</p>
+            <p>(19) 99220-4001 / (19) 99387-5092</p>
           </div>
           <div class="footer-contact-item">
             <span>
@@ -328,7 +328,7 @@
           </div>
         </div>
       </div>
-      <p>© 2022 ProjectClean - CNPJ: 42.726.740/0001-50</p>
+      <p>© 2023 ProjectClean LTDA - CNPJ: 42.726.740/0001-50</p>
     </div>
   </footer>
 
